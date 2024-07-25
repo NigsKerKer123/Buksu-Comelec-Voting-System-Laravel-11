@@ -23,16 +23,8 @@ class AdminUserSeeder extends Seeder
                 'name' => "Kirk John L. Sieras",
                 'email' => $email,
                 'password' => Hash::make("gwapoko123"),
+                'role' => "admin",
             ]);
-        }
-
-        $userAdmin = DB::table('users')->where('email', $email)->first();
-
-        if ($userAdmin) {
-            DB::table('admin_users')->updateOrInsert(
-                ['id' => $userAdmin->id],
-                ['created_at' => now(), 'updated_at' => now()]
-            );
         }
     }
 }
