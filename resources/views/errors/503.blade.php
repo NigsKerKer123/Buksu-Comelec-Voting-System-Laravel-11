@@ -1,41 +1,45 @@
-<!doctype html>
-<html>
-    <head>
-        <title>Be right back.</title>
-<link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-<style>
-            html, body {
-                height: 100%;
-            }
-body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                color: #B0BEC5;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato', sans-serif;
-            }
-.container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-.content {
-                text-align: center;
-                display: inline-block;
-            }
-.title {
-                font-size: 72px;
-                margin-bottom: 40px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">System is under Maintenance!</div>
-            </div>
-        </div>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:500,800" rel="stylesheet">
+  <title>503 System Under Maintenance</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: #233142;
+    }
+    .whistle {
+      width: 40%;
+      margin: 100px auto; /* Center horizontally */
+      display: block; /* Make sure image behaves like a block element */
+    }
+    h1 {
+      margin-top: -100px;
+      margin-bottom: 20px;
+      color: #facf5a;
+      text-align: center;
+      font-family: 'Raleway';
+      font-size: 90px;
+      font-weight: 800;
+    }
+    h2 {
+      color: #455d7a;
+      text-align: center;
+      font-family: 'Raleway';
+      font-size: 30px;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <img src="{{asset('images/503.jpg')}}" alt="403 image" class="whistle"/>
+  <h1>503</h1>
+  <h2>System is under maintenance, kadeut lang :></h2>
+</body>
 </html>
