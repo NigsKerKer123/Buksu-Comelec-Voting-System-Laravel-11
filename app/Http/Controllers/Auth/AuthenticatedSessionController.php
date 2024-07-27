@@ -16,7 +16,7 @@ class AuthenticatedSessionController extends Controller
      */
     public function create(): View
     {
-        return view('auth.login');
+        return view('login');
     }
 
     /**
@@ -32,7 +32,6 @@ class AuthenticatedSessionController extends Controller
         } else{
             return redirect()->intended(route('voter.home', absolute: false));
         }
-        
     }
 
     /**

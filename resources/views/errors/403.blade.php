@@ -34,7 +34,7 @@ body {
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">This is admin only, Go away motherfucker!!</div>
+                <div class="title">403 forbidden route, ayaw na pag kuri2 ba!</div>
             </div>
         </div>
     </body>

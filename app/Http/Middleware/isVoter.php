@@ -18,9 +18,8 @@ class isVoter
     {
         if (Auth::check() && Auth::user()->role === 'user') {
             return $next($request);
+        } else{
+            return abort(403);
         }
-        Auth::logout();
-        abort(403);
-        return $next($request);
     }
 }
