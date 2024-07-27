@@ -1,5 +1,4 @@
 <?php
-
 use App\Http\Controllers\VoterController;
 use Illuminate\Support\Facades\Route;
 
