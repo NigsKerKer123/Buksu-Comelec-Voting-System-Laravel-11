@@ -17,7 +17,11 @@ class RedirectIfAuthenticated
     public function handle(Request $request, Closure $next, $guard = null): Response
     {
         if (Auth::guard($guard)->check()) {
-            return redirect()->back(); 
+            if(Auth::check() && Auth::user()->role === "voter"){
+                return redirect()->route('voter.home');
+            } else{
+                return redirect()->route('admin.home');
+            } 
         } else{
             return $next($request);
         }

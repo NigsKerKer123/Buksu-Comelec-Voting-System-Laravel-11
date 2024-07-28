@@ -11,9 +11,9 @@
     @vite(['resources/css/app.css','resources/js/app.js'])
 </head>
 <body>
-    @include("components.nav");
-    @include("components.sidebar");
-    @include("admin.body");
+    @include("components.nav")
+    @include("components.sidebar")
+    @include("admin.dashboard.body")
 </body>
 </html>
 

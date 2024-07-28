@@ -16,7 +16,7 @@ class isVoter
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (Auth::check() && Auth::user()->role === 'user') {
+        if (Auth::check() && Auth::user()->role === 'voter') {
             return $next($request);
         } else{
             return abort(403);

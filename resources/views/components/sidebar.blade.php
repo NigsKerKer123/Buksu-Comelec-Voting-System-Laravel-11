@@ -3,43 +3,43 @@
       <ul class="space-y-2 font-medium">
          <li>
             <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-               <img class="ms-3 w-5 h-5" src="{{asset('images/icon/dashboard.png')}}" alt="dashboard logo">
+               <img class="ms-4 w-5 h-5" src="{{asset('images/icon/dashboard.png')}}" alt="dashboard logo">
                <span class="ms-3 bebas-neue-regular">Dashboard</span>
             </a>
          </li>
          <li>
             <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-               <img class="ms-3 w-5 h-5" src="{{asset('images/icon/organization.png')}}" alt="dashboard logo">
+               <img class="ms-4 w-5 h-5" src="{{asset('images/icon/organization.png')}}" alt="dashboard logo">
                <span class="flex-1 ms-3 whitespace-nowrap bebas-neue-regular">Organizations</span>
             </a>
          </li>
          <li>
             <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-               <img class="ms-3 w-5 h-5" src="{{asset('images/icon/partylist.png')}}" alt="dashboard logo">
+               <img class="ms-4 w-5 h-5" src="{{asset('images/icon/partylist.png')}}" alt="dashboard logo">
                <span class="flex-1 ms-3 whitespace-nowrap bebas-neue-regular">Party Lists</span>
             </a>
          </li>
          <li>
             <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-               <img class="ms-3 w-5 h-5" src="{{asset('images/icon/college.png')}}" alt="dashboard logo">
+               <img class="ms-4 w-5 h-5" src="{{asset('images/icon/college.png')}}" alt="dashboard logo">
                <span class="flex-1 ms-3 whitespace-nowrap bebas-neue-regular">Colleges</span>
             </a>
          </li>
          <li>
             <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-               <img class="ms-3 w-5 h-5" src="{{asset('images/icon/position.png')}}" alt="dashboard logo">
+               <img class="ms-4 w-5 h-5" src="{{asset('images/icon/position.png')}}" alt="dashboard logo">
                <span class="flex-1 ms-3 whitespace-nowrap bebas-neue-regular">Positions</span>
             </a>
          </li>
          <li>
             <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-               <img class="ms-3 w-5 h-5" src="{{asset('images/icon/candidate.png')}}" alt="dashboard logo">
+               <img class="ms-4 w-5 h-5" src="{{asset('images/icon/candidate.png')}}" alt="dashboard logo">
                <span class="flex-1 ms-3 whitespace-nowrap bebas-neue-regular">Candidates</span>
             </a>
          </li>
          <li>
             <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-               <img class="ms-3 w-5 h-5" src="{{asset('images/icon/voter.png')}}" alt="dashboard logo">
+               <img class="ms-4 w-5 h-5" src="{{asset('images/icon/voter.png')}}" alt="dashboard logo">
                <span class="flex-1 ms-3 whitespace-nowrap bebas-neue-regular">Voters</span>
             </a>
          </li>
