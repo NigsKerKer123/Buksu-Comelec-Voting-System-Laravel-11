@@ -8,6 +8,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
+use Illuminate\Validation\ValidationException;
 
 class AuthenticatedSessionController extends Controller
 {
@@ -24,13 +25,18 @@ class AuthenticatedSessionController extends Controller
      */
     public function store(LoginRequest $request): RedirectResponse
     {
-        $request->authenticate();
+        try{
+            $request->authenticate();
 
-        $request->session()->regenerate();
-        if(Auth::user()->role === 'admin'){
-            return redirect()->intended(route('admin.home', absolute: false));
-        } else{
-            return redirect()->intended(route('voter.home', absolute: false));
+            $request->session()->regenerate();
+            
+            if(Auth::user()->role === 'admin'){
+                return redirect()->intended(route('admin.home', absolute: false));
+            } else{
+                return redirect()->intended(route('voter.home', absolute: false));
+            }
+        } catch (ValidationException $e){
+            return redirect()->back()->withErrors($e->errors())->withInput();
         }
     }
 
