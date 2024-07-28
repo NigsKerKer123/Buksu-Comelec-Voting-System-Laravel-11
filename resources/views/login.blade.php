@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Buksu Comelec: Login</title>
         <link rel="icon" href="{{ asset('images/tab_icon.png') }}" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         @vite(['resources/css/app.css','resources/js/app.js'])
     </head>
     
@@ -19,7 +22,7 @@
                     <div class="max-w-md mx-auto">
                         <div class="flex items-center justify-start rtl:justify-end space-x-4">
                             <img src="{{ asset('images/logo.jpg') }}" alt="logo" class="w-16 h-16 rounded-full">
-                            <h1 class="text-xl font-bold sm:text-2xl whitespace-nowrap dark:text-white">Login</h1>
+                            <h1 class="text-[35px] font-bold whitespace-nowrap dark:text-white bebas-neue-regular">Login</h1>
                         </div>
 
                         <form action="{{route('login')}}" method="POST">
@@ -62,3 +65,11 @@
         alert("{{ Session::get('error') }}");
     </script>
 @endif
+
+<style>
+    .bebas-neue-regular {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+</style>
