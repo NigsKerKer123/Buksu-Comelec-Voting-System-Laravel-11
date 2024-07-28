@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     @vite(['resources/css/app.css','resources/js/app.js'])
 </head>
-<body>
+<body class="bg-gray-50">
     @include("components.nav")
     @include("components.sidebar")
     @include("admin.dashboard.body")
