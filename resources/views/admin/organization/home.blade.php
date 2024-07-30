@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buksu Comelec: Dashboard</title>
+    <title>Buksu Comelec: Organization</title>
     <link rel="icon" href="{{ asset('images/tab_icon.png') }}" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
 <body class="bg-gray-50">
     @include("components.nav")
     @include("components.sidebar")
-    @include("admin.dashboard.body")
+    @include("admin.organization.body")
 </body>
 </html>
 

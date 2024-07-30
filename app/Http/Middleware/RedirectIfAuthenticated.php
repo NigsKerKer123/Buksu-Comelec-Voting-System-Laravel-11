@@ -20,7 +20,7 @@ class RedirectIfAuthenticated
             if(Auth::check() && Auth::user()->role === "voter"){
                 return redirect()->route('voter.home');
             } else{
-                return redirect()->route('admin.home');
+                return redirect()->route('dashboard.home');
             } 
         } else{
             return $next($request);
