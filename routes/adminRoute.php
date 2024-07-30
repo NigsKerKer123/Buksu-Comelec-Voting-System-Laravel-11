@@ -2,6 +2,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\OrganizationController;
+use App\Http\Controllers\PartyListController;
+use App\Http\Controllers\CollegeController;
+use App\Http\Controllers\PositionController;
+use App\Http\Controllers\CandidateController;
 
 Route::middleware(['auth', 'isAdmin'])->prefix('admin')->group(function(){
     //Dashboard
@@ -9,4 +13,16 @@ Route::middleware(['auth', 'isAdmin'])->prefix('admin')->group(function(){
 
     //organization
     Route::get('organization/home', [OrganizationController::class, 'home'])->name('organization.home');
+
+    //Partylist
+    Route::get('partylist/home', [PartyListController::class, 'home'])->name('party.home');
+
+    //College
+    Route::get('college/home', [CollegeController::class, 'home'])->name('college.home');
+
+    //position
+    Route::get('position/home', [PositionController::class, 'home'])->name('position.home');
+
+    //Candidate
+    Route::get('candidate/home', [CandidateController::class, 'home'])->name('candidate.home');
 });
