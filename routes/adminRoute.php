@@ -6,6 +6,7 @@ use App\Http\Controllers\PartyListController;
 use App\Http\Controllers\CollegeController;
 use App\Http\Controllers\PositionController;
 use App\Http\Controllers\CandidateController;
+use App\Http\Controllers\VotersInAdminController;
 
 Route::middleware(['auth', 'isAdmin'])->prefix('admin')->group(function(){
     //Dashboard
@@ -25,4 +26,7 @@ Route::middleware(['auth', 'isAdmin'])->prefix('admin')->group(function(){
 
     //Candidate
     Route::get('candidate/home', [CandidateController::class, 'home'])->name('candidate.home');
+
+    //Voter
+    Route::get('voter/home', [VotersInAdminController::class, 'home'])->name('admin.voter.home');
 });

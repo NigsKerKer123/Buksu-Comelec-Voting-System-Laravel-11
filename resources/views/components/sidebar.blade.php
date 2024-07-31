@@ -38,7 +38,7 @@
             </a>
          </li>
          <li>
-            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+            <a href="{{route('admin.voter.home')}}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group {{ request()->routeIs('admin.voter.home') ? 'bg-gray-200 dark:bg-gray-700' : '' }}">
                <img class="ms-4 w-5 h-5" src="{{asset('images/icon/voter.png')}}" alt="dashboard logo">
                <span class="flex-1 ms-3 whitespace-nowrap bebas-neue-regular">Voters</span>
             </a>
