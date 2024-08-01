@@ -14,7 +14,7 @@
 
             <div class="p-5">
                 <div class="text-center">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Team Gwapo</h5>
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Supreme Student Council</h5>
                 </div>
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">[Description] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
@@ -32,7 +32,7 @@
 
             <div class="p-5">
                 <div class="text-center">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Galit sa Bisaya</h5>
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Student Body Organization</h5>
                 </div>
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">[Description] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
