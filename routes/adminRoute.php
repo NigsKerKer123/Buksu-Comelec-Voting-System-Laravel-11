@@ -16,7 +16,8 @@ Route::middleware(['auth', 'isAdmin'])->prefix('admin')->group(function(){
     Route::get('organization/home', [OrganizationController::class, 'home'])->name('organization.home');
 
     //Partylist
-    Route::get('partylist/home', [PartyListController::class, 'home'])->name('party.home');
+    Route::get('party/home', [PartyListController::class, 'home'])->name('party.home');
+    Route::post('party/add', [PartyListController::class, 'add'])->name('party.add');
 
     //College
     Route::get('college/home', [CollegeController::class, 'home'])->name('college.home');
