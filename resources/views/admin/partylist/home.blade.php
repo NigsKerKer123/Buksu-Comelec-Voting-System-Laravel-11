@@ -14,6 +14,7 @@
     @include("components.nav")
     @include("components.sidebar")
     @include("admin.partylist.body")
+    @include("admin.partylist.modal")
 </body>
 </html>
 
