@@ -18,6 +18,8 @@ Route::middleware(['auth', 'isAdmin'])->prefix('admin')->group(function(){
     //Partylist
     Route::get('party/home', [PartyListController::class, 'home'])->name('party.home');
     Route::post('party/add', [PartyListController::class, 'add'])->name('party.add');
+    Route::put('party/{id}', [PartyListController::class, 'update'])->name('party.update');
+    Route::delete('party/{id}', [PartyListController::class, 'destroy'])->name('party.destroy');
 
     //College
     Route::get('college/home', [CollegeController::class, 'home'])->name('college.home');
